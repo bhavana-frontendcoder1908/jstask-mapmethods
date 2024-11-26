@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Task-1")
+        let array1=[1,2,3,4,5,6,7,8,9,10]
+        let newarray1=array1.map(function(value,index,arr1){
+            return value*2
+        })
+        console.log(array1," The Original Array")
+        console.log(newarray1," The Array which is Doubled")
+
+        console.log("Task-2")
+        let array2=[1,2,3,4,5,6,7,8,9,10]
+        let newarray2=array2.map(function(value,index,arr2){
+            return value**2
+        })
+        console.log(array2," The Original Array")
+        console.log(newarray2," The Array which is Squared")
+
+        console.log("Task-3")
+        let array3=[1,2,3,4,5,6,7,8,9,10]
+        let newarray3=array3.filter(function (val,index,arr3) {
+            return val%2!=0
+            
+        })
+        console.log(newarray3," The non-even/odd Numbers Array")
+
+        console.log("Task-4")
+        let wordarray=["apple","banana","cat","doll","elephant","frog"]
+        let filteredArray = wordarray.filter(word => word.length <= 5);
+        console.log("Filtered Array",filteredArray)
+
+    </script>
+</body>
+</html>
